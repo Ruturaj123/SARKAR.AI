@@ -1,4 +1,4 @@
-# SARAKR.AI
+# SARKAR.AI
 We built this WebApp in CodeShastra 5.0 - Round 0.
 
 Everyone has the excitement of knowing which party will be ruling India from 2019 onwards. So we came up with this web app wherein you can type a trending political topic for say Rafale Deal or Demonetization or any topic you are interested in, you get deep insights on other people's perspective on these topics from various news articles, blogs, and Twitter. By having a look over all the analysis we hope that you will be able to make a decision on choosing your party. We didn't predict which party will win as then our application will be considered biased and now our application says what people say. We also have provided you with a bot where you can feed it some context and then asked questions based on that.
