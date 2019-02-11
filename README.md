@@ -44,3 +44,10 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 python3 -m spacy download en
 ```
+### Our Team:
+1) [Pujan Mehta](https://github.com/pujanm)
+2) [Dhruv Bhagadia](https://github.com/DhruvBhagadia)  
+3) [Sahil Jajodia](https://github.com/sahiljajodia01)
+4) [Ruturaj Gujar](https://github.com/Ruturaj123)
+
+#### WE WELCOME MORE IDEAS!!
