@@ -18,11 +18,18 @@ from collections import OrderedDict
 import unicodedata
 import spacy
 from collections import Counter
+
+from dotenv import load_dotenv, find_dotenv
+ENV_FILE = find_dotenv()
+
+if ENV_FILE:
+    load_dotenv(ENV_FILE)
+
 # Create your views here.
-consumer_key = 'K8rDGMdTDwKz2tWpNIuurZSr7'
-consumer_secret = 'wb1ZWvuC9loX78f6GVDVgNzoG0YATKLhPwjtXlnWrOiplm901u'
-access_token = '962553243116204032-XWr3Ud2mD56izQFWFXu2aZMCZ9MkGxZ'
-access_token_secret = 'fqYgYnEAkwy15NZBHhjb0ZCoL67hybGZe7fni8QXFL2RY'
+consumer_key = os.getenv('consumer_key')
+consumer_secret = os.getenv('consumer_secret')
+access_token = os.getenv('access_token')
+access_token_secret = os.getenv('access_token_secret')
 
 
 nlp = spacy.load('en_core_web_sm')
@@ -65,7 +72,7 @@ def linechart(request):
 
 def get_news(topic):
     # topic = "demonetization india"
-    api = NewsApiClient(api_key="4e6941abb75c490a950e634acf91ed08")
+    api = NewsApiClient(api_key=os.getenv('news_api_key'))
     all_articles = api.get_everything(q=topic, language='en', sort_by='relevancy')
     publishers_list = {}
     for article in all_articles["articles"]:
