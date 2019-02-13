@@ -43,6 +43,7 @@ virtualenv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 python3 -m spacy download en
+python3 manage.py runserver
 ```
 ### Our Team:
 1) [Pujan Mehta](https://github.com/pujanm)
