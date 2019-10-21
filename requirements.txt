@@ -32,7 +32,7 @@ more-itertools==5.0.0
 munch==2.3.2
 murmurhash==0.26.4
 newsapi-python==0.2.3
-nltk==3.4
+nltk==3.4.5
 numpy==1.16.1
 oauthlib==3.0.1
 parse==1.11.1
